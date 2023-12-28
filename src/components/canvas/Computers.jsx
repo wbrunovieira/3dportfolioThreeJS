@@ -15,12 +15,12 @@ const Computers = ({ isMobile }) => {
 
   return (
       <mesh>
-        <hemisphereLight intensity={0.15} groundColor='black' />
+        <hemisphereLight intensity={2.5} groundColor='black' />
         <spotLight
         position={[-20, 50, 10]}
         angle={0.12}
         penumbra={1}
-        intensity={1}
+        intensity={2}
         castShadow
         shadow-mapSize={1024}
       />
@@ -29,7 +29,7 @@ const Computers = ({ isMobile }) => {
       <primitive
         // eslint-disable-next-line react/no-unknown-property
         object={computer.scene}
-        scale={isMobile ? 0.5 : 0.75}
+        scale={isMobile ? 0.5 : 0.95}
         position={isMobile ? [0, -3, -2.2] : [0, -3.25, -1.5]}
         rotation={[-0.01, -0.2, -0.1]}
       />
