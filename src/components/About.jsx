@@ -22,7 +22,7 @@ const ServiceCard = ({ index, title, icon }) => (
           scale: 1,
           speed: 450,
         }}
-        className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'
+        className='bg-[#792990]/90 rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'
       >
         <img
           src={icon}
@@ -44,18 +44,20 @@ const About = () => {
     <>
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>Sobre</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
+        <h2 className={styles.sectionHeadText}>Quem Somos.</h2>
       </motion.div>
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        m a skilled software developer with experience in TypeScript and
-        JavaScript, and expertise in frameworks like React, Node.js, and
-        Three.js.  a quick learner and collaborate closely with clients to
-        create efficient, scalable, and user-friendly solutions that solve
-        real-world problems. work together to bring your ideas to life!
+        Onde a tecnologia encontra a criatividade para impulsionar o seu negócio! Somos uma empresa jovem e inovadora especializada em soluções de tecnologia e marketing digital, comprometida em ajudar empresas a alcançar o sucesso no mundo digital. <br /><br />
+        Fundada com a visão de ser uma força transformadora no cenário digital, a WB Digital Solutions é movida pela paixão de criar experiências digitais inovadoras e soluções tecnológicas de ponta. Nossa equipe é composta por profissionais altamente qualificados e dedicados, que compartilham uma paixão por ajudar nossos clientes a superar desafios e alcançar seus objetivos empresariais. <br /><br />
+
+        Valorizamos a integridade, a inovação e a excelência, e estamos sempre buscando novas formas de superar as expectativas dos nossos clientes. Acreditamos no poder da colaboração e da comunicação aberta, trabalhando lado a lado com você para entender suas necessidades e criar soluções que geram resultados reais e duradouros.
+
+
+
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>
